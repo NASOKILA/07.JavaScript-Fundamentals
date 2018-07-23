@@ -14,13 +14,11 @@ arr[0] = 1;
     console.log(arr.join(" "));
 }
 
-
 tribonacci('6', '3');
+
 tribonacci('8', '2');
-//or something more complex, for example:
 
 console.log();
-
 
 function lastKElements(n, k) {
 
@@ -29,8 +27,6 @@ function lastKElements(n, k) {
 
         let sum = 0;
 
-        //Ako result.length - k > 0 shte go vzeme samo togava i shte slicenem masiva
-        // s tova chislo !!!
         let indexToSlice = Math.max(0,result.length - k);
 
         result.slice(indexToSlice)
@@ -41,8 +37,7 @@ function lastKElements(n, k) {
 
     console.log(result.join(' '));
 }
+
 lastKElements(6, 3);
+
 lastKElements(8, 2);
-
-
-

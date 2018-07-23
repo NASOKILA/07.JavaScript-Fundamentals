@@ -1,6 +1,4 @@
 
-
-
 function Solution(args)
 {
     let max = Number.NEGATIVE_INFINITY;
@@ -20,6 +18,7 @@ function Solution(args)
             }
         }
     }
+	
     console.log(max);
 }
 
@@ -30,23 +29,16 @@ Solution([[3, 5, 7, 12],
     [-1, 4, 33, 2],
     [8, 3, 0, 4]]);
 
-
-
 console.log();
-
-
 
 function biggestNum(matrix) {
 
     let max = Number.NEGATIVE_INFINITY;
 
-    //obhojdame vseki red
     for(let row in matrix){
 
-        //obhojdame vsqko chislo na tozi red :
         for(let col in matrix[row]){
-
-            //proverqvame dali chisloto e po golqmo
+  
             if(max < matrix[row][col])
                 max = matrix[row][col];
         }
@@ -62,8 +54,3 @@ biggestNum(
     [[3, 5, 7, 12],
     [-1, 4, 33, 2],
     [8, 3, 0, 4]]);
-
-
-
-
-

@@ -14,9 +14,7 @@ function solve(args) {
 }
 solve([10, 15, 20, 25]);
 
-
 console.log();
-
 
 function printOdd(arr){
     let oddNumbers = arr.filter((e,i) => i % 2 !== 0).map(e => e*2)
@@ -25,4 +23,5 @@ function printOdd(arr){
 }
 
 printOdd([3, 0, 10, 4, 7, 3]);
+
 printOdd([10,15,20,25]);

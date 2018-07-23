@@ -2,13 +2,14 @@
 function diagonalSum(matrix) {
 
     let normalDiagonal = 0;
+	
     let backDiagonal = 0;
+	
     let sum = 0;
 
         for(let row in matrix){
             for(let col in matrix[row]){
 
-                //0,0  1,1  2,2  3,3 ...
                 if(row === col)
                     normalDiagonal += matrix[row][col];
 
@@ -18,7 +19,7 @@ function diagonalSum(matrix) {
                     backDiagonal += matrix[row][col];
             }
         }
-
+		
     console.log(normalDiagonal + ' ' + backDiagonal);
 }
 
@@ -37,4 +38,3 @@ diagonalSum(
         [1,2,3,4,5],
         [1,2,3,4,5],
         [1,2,3,4,5]]);
-

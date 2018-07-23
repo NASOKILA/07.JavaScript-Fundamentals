@@ -14,6 +14,3 @@ function solve(args) {
 }
 
 solve(['20', '30', '40']);
-
-
-

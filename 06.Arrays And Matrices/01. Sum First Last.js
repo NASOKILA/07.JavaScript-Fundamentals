@@ -8,18 +8,3 @@ function solve(args) {
 
 solve(['20','30','40']);
 console.log(solve([20, 30, 40]));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
