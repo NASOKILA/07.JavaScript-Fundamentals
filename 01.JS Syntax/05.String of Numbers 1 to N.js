@@ -1,6 +1,4 @@
 
-
-
 function numbers(n)
 {
     let result = "";
@@ -12,8 +10,3 @@ function numbers(n)
 }
 
 numbers(11);
-
-
-
-
-

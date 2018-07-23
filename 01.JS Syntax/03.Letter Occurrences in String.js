@@ -14,10 +14,3 @@ function Occurrences(word, letter) {
 
 Occurrences('hello', 'l');
 Occurrences('panther', 'n');
-
-
-
-
-
-
-

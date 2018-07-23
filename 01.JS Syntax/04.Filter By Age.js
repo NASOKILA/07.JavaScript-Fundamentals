@@ -1,7 +1,6 @@
 
 function FilterByAge(minAge, p1Name, p1Age, p2Name, p2Age)
 {
-
     let people = [];
 
     let personOne = {name: p1Name, age: p1Age};
@@ -15,25 +14,6 @@ function FilterByAge(minAge, p1Name, p1Age, p2Name, p2Age)
         if(p.age >= minAge)
             console.log(p);
     }
-
 }
 
-
 FilterByAge(12, 'Ivan', 15, 'Asen', 9);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

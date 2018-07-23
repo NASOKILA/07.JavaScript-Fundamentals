@@ -8,9 +8,6 @@ function SumAndVAT(args) {
     let vat = sum / 5.0;
     let total = sum + vat;
 
-    // .toFixed() gi prevrushta v string do
-    // podadenite znachi sled desetichnata zapetaq
-    // Loshoto na tova e che stava na string
     console.log(sum.toFixed(2));
     console.log(vat.toFixed(2));
     console.log(total.toFixed(2));

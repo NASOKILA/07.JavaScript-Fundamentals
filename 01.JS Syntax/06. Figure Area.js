@@ -1,5 +1,4 @@
 
-
 function Area(w,h,W,H) {
 
     let minHeight = 0;
@@ -42,11 +41,3 @@ Area(2,4,5,3);
 Area(13,2,5,8);
 
 Area(1,1,2,2);
-
-
-
-
-
-
-
-

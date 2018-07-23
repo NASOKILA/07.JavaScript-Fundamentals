@@ -7,18 +7,3 @@ function NextDay(year, month, day)
 }
 
 NextDay(2016,9,30);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
