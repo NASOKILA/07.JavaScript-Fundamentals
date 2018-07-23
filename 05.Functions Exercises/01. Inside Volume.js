@@ -1,6 +1,4 @@
 
-
-
 function solve(input) {
     for(let i = 0; i < input.length; i +=3)
     {
@@ -14,6 +12,7 @@ function solve(input) {
             console.log('outside');
 
     }
+	
     function inVolume(x, y, z) {
         let x1 = 10, x2 = 50;
         let y1 = 20, y2 = 80;
@@ -30,11 +29,7 @@ function solve(input) {
             }
         }
         return false;
-
     }
 }
 
-
 solve([8, 20, 22]);
-
-

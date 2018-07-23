@@ -30,9 +30,3 @@ solve(
     "What is the brightest star in the night sky?",
     "Sirius"]
 );
-
-
-
-
-
-

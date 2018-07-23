@@ -19,14 +19,7 @@ function solve(input){
         }catch(error){
             console.log('Invalid operation');
         }
-
-
     }
-
 }
 
-//solve(['32', 'chop', 'chop', 'chop', 'chop', 'chop']);
 solve(['9', 'dice', 'spice', 'chop', 'bake', 'fillet']);
-
-
-
