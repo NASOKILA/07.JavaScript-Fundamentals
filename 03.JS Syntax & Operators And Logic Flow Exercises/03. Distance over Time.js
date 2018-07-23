@@ -10,12 +10,3 @@ function solve(input) {
 
 let input = [0, 60, 3600];
 solve(input);
-
-
-
-
-
-
-
-
-

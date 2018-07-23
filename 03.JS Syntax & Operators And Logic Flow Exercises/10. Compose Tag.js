@@ -4,8 +4,3 @@ function solve(args) {
 }
 
 solve(['smiley.gif','Smiley Face']);
-
-
-
-
-

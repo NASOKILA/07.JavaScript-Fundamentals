@@ -1,5 +1,4 @@
 
-
 function s(args) {
 
     let day = args[0];

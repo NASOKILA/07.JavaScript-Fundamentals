@@ -18,13 +18,3 @@ let input2 = [3.5, 0, 1, 0, 2, -1];
 
 solve(input);
 solve(input2);
-
-
-
-
-
-
-
-
-
-

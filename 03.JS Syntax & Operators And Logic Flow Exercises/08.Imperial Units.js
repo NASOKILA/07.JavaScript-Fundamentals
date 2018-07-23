@@ -11,13 +11,3 @@ function solve(n) {
 solve(36);
 solve(55);
 solve(11);
-
-
-
-
-
-
-
-
-
-

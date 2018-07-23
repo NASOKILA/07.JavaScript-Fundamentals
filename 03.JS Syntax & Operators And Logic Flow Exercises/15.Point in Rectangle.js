@@ -1,5 +1,4 @@
 
-
 function solve(input) {
 
     let x = input[0];
@@ -16,13 +15,3 @@ function solve(input) {
 }
 
 solve([8,-1,2,12,-3,3]);
-
-
-
-
-
-
-
-
-
-

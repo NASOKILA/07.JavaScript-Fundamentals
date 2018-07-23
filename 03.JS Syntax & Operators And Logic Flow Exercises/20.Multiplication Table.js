@@ -26,18 +26,3 @@ function solve(n) {
 }
 
 solve(5);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

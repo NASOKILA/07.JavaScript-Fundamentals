@@ -12,14 +12,3 @@ function solve(args) {
 }
 
 solve(['name', 'Pesho', 'age', '23', 'gender', 'male']);
-
-
-
-
-
-
-
-
-
-
-
