@@ -22,8 +22,3 @@ function solve(args) {
 
 solve([1,2,3]);
 solve([2,4,8,16]);
-
-
-
-
-

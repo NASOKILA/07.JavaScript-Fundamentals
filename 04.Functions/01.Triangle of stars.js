@@ -10,8 +10,6 @@ function solve(n) {
         console.log(simbol);
     }
 
-    //Mojem da polzvame .repeat() za da nariuvame vezdichkite
-
     for(let i = n-1; i > 0; i--)
     {
         let simbol = '';
@@ -21,17 +19,6 @@ function solve(n) {
         }
         console.log(simbol);
     }
-
 }
 
 solve(5);
-
-//solve(3);
-
-//solve(10);
-
-
-
-
-
-

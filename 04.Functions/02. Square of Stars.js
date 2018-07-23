@@ -1,5 +1,4 @@
 
-
 function solve(n) {
     let simbol = '';
     for(let i = 1; i <= n; i++)
@@ -12,5 +11,3 @@ function solve(n) {
 solve(5);
 solve(1);
 solve(2);
-
-

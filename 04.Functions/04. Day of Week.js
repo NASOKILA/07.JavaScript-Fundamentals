@@ -1,5 +1,4 @@
 
-
 function dayOfWeek(day) {
 
     switch (day)
@@ -27,19 +26,7 @@ function dayOfWeek(day) {
             break;
         default:
             console.log('error');
-
     }
-
 }
 
 dayOfWeek('Monday');
-
-
-
-
-
-
-
-
-
-

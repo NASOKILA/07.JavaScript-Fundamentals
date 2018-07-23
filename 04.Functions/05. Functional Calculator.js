@@ -1,6 +1,4 @@
 
-
-
 function solve(n1, n2, operator) {
 
     let result = '';
@@ -20,5 +18,3 @@ function solve(n1, n2, operator) {
 solve(2, 4, '+');
 solve(18, -1, '*');
 solve(3, 3, '/');
-
-
