@@ -35,11 +35,7 @@ solve(['| Sofia           | 300',
        '| Veliko Tarnovo  | 500',
        '| Yambol          | 275']);
 
-
-
 console.log();
-
-
 
 function s(arr) {
 
@@ -61,14 +57,6 @@ function s(arr) {
     console.log(sum);
 }
 
-
-
 s(['| Sofia           | 300',
     '| Veliko Tarnovo  | 500',
     '| Yambol          | 275']);
-
-
-
-
-
-

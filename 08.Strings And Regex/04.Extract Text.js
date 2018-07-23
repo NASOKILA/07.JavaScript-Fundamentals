@@ -5,8 +5,8 @@ function solve(sentence) {
 
     while(true)
     {
-
         let start = sentence.indexOf('(');
+		
         let end = sentence.indexOf(')');
 
         if(start === -1 || end === -1)
@@ -18,6 +18,7 @@ function solve(sentence) {
         let word = sentence.substring(start+1, end);
 
         sentence = sentence.replace('(', '');
+		
         sentence = sentence.replace(')', '');
 
         words.push(word);
@@ -25,12 +26,6 @@ function solve(sentence) {
 
     console.log(words.join(', '));
 }
-
-//solve('Rakiya (Bulgarian brandy) is self-made liquor (alcoholic drink)');
-
-
-
-
 
 function s(str){
 
@@ -55,10 +50,3 @@ function s(str){
 }
 
 s('Rakiya (Bulgarian brandy) is self-made liquor (alcoholic drink)');
-
-
-
-
-
-
-

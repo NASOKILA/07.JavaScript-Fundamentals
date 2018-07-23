@@ -1,5 +1,4 @@
 
-
 function solve(args) {
 
     for(let elem of args)
@@ -14,40 +13,13 @@ function solve(args) {
             let thisYear = new Date().getFullYear();
             if(year <= thisYear)
             {
-
                 let index = dateCopy.indexOf('-');
                 let resultToPrint = result[0] + ` (Day: ${dateCopy.substr(0,index)}, Month: ${dateCopy.substr(index+1, 3)}, Year: ${year})`;
                 console.log(resultToPrint);
             }
-
         }
-
     }
-
 }
-/*
- solve(['1-Jan-1999 is a valid date.',
- 'So is 01-July-2000.',
- 'I am an awful liar, by the way – Ivo, 28-Sep-2016.']);
-
-
- solve(['I dont know what to test anymore so here are some random dates.',
- '15-May-1996',
- '21-June-1995',
- '31-February-3000',
- 'woops that was invalid...',
- '111-Nov-2332',
- '01-January-0001',
- 'What the fuck',
- '11-Sep-2001',
- 'One minute of silence!']);
-
- */
-
-
-
-
-
 
 function s(stringArr) {
 
@@ -70,11 +42,8 @@ function s(stringArr) {
         let year = date.substr(date.length-4);
 
         console.log(`${date} (Day: ${day}, Month: ${month}, Year: ${year})`);
-        //30-Dec-1994 (Day: 30, Month: Dec, Year: 1994)
     }
-
 }
-
 
 s(['I am born on 30-Dec-2222 and my brother on 30-Dec-1994.',
     'This is not date: 512-Jan-1996.',
@@ -96,4 +65,3 @@ s(['I dont know what to test anymore so here are some random dates.',
 s(['1-Jan-1999 is a valid date.',
     'So is 01-July-2000.',
     'I am an awful liar, by the way – Ivo, 28-Sep-2016.']);
-

@@ -7,9 +7,6 @@ function solve(args) {
 
 solve('SoftUni');
 
-
-
-
 function s(str) {
    for(let ch = 0; ch < str.length; ch++)
    {
@@ -17,24 +14,3 @@ function s(str) {
    }
 }
 s('SoftUni');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -34,10 +34,6 @@ function solve(emails) {
     console.log(result.join(', '));
 }
 
-//solve(['peshoo@gmail.com', 'todor_43@mail.dir.bg', 'foo@bar.com']);
-
-
-
 function s(emails) {
 
     let result = [];
