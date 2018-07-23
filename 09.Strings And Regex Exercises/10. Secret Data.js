@@ -1,18 +1,12 @@
 
 function solve(arrayOfStrings) {
 
-    // na vseki edin regex imame lookAhead koito proverqva za space, tabulciq ili za krai na stringa
-
-    // v numbers regexa vtorata grupa tuka moje da q ima no moje i  da q nqma '*'
-
     let patterns = {
             names:/(\*[A-Z]{1}([A-Za-z]+)*)(?= |\t|$)/g,
             numbers:/(\+[0-9\-]{10})(?= |\t|$)/g,
             ids:/(\![a-zA-Z0-9]+)(?= |\t|$)/g,
             base:/(\_[a-zA-Z0-9]+)(?= |\t|$)/g
         };
-
-    //VSICHKI TEZI REGEXI MOJEM DA GI SUEDINIM V EDIN KATO GI RAZDELIM S "|" !!!
 
     let result = '';
 
@@ -22,8 +16,6 @@ function solve(arrayOfStrings) {
 
             let pattern = patterns[p];
 
-            //ZA DA REPLEISNEM MU PODAVAME ANONIMNA ARROW FUNKCIQ KOQTO AVTOMATICHNO PRIEMA
-            //PARAMETURA match I MOJE DA RABOTI S NEGO
                 result = result
                     .replace(pattern, (match) => {
                         return '|'.repeat(match.length);
@@ -74,11 +66,3 @@ s([
     'This is all I saw, that night.',
     'I cannot explain it myself...'
 ]);
-
-
-
-
-
-
-
-

@@ -16,14 +16,6 @@ function solve(args) {
     console.log(result);
 }
 
-//solve('Capitalize these words');
-//solve('Was that Easy? tRY thIs onE for SiZe!');
-
-
-
-
-
-
 function s(text) {
 
     let result = [];
@@ -40,6 +32,3 @@ function s(text) {
 
 s('Capitalize these words');
 s('Was that Easy? tRY thIs onE for SiZe!');
-
-
-
