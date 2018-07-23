@@ -1,6 +1,4 @@
 
-
-
 function solve(args) {
 
     let result = args.sort(compare).join('\n');
@@ -19,40 +17,14 @@ function solve(args) {
                 return 1;
             else
                 return 0;
-
         }
     }
 }
 
-/*
-solve([
-    'Isacc',
-    'Theodor',
-    'Jack',
-    'Harrison',
-    'George']);
-*/
-
-/*
-solve(['alpha',
-    'beta',
-    'gamma']);
-
-
- solve(['Deny',
- 'omen',
- 'test',
- 'Default']);
-
-*/
-
-
-
 function sortArr (arr) {
 
     arr.sort((a,b) => {
-
-        // sortirame po dukjina, tova e purvi kriterii
+        
         if(a.length > b.length){
             return 1;
         }else if(a.length < b.length){
@@ -60,9 +32,6 @@ function sortArr (arr) {
         }
         else
         {
-            //ako sa s ednakva dukjina
-
-            //sortirame alfabetichno, vtori kriterii
             if(a >= b){
                 return 1;
             }else{
@@ -71,7 +40,6 @@ function sortArr (arr) {
         }
     })
         .forEach(e => console.log(e));
-
 }
 
 sortArr(['Deny',

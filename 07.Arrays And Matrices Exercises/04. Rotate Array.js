@@ -7,7 +7,6 @@ function solve(args) {
 
     timesToRotate %= arr.length;
 
-
     for(let i = 0; i < timesToRotate; i++)
     {
         let lastElem = arr.pop();
@@ -15,41 +14,18 @@ function solve(args) {
     }
 
     console.log(arr.join(' '));
-
 }
-
-//solve(['1','2','3','4','2']);
-
-/*
-solve(['Banana',
-        'Orange',
-        'Coconut',
-        'Apple',
-        '15']);
-*/
-
-//1 2 3 4
-//2 3 4 1
-//3 4 1 2
-
-
-
 
 function rotate(arr) {
 
     let n = Number(arr.pop());
 
-
-    // 15 % 4 = 3   TAKA E !!!
-    // 2 % 4 =
     n = n % arr.length;
 
     for(let i = 0; i < n; i++){
 
-        //take lastElement
         const currentElement = arr.pop();
 
-        //push it in the begining of the array
         arr.unshift(currentElement);
     }
 
@@ -62,11 +38,4 @@ rotate(['Banana',
     'Apple',
     '15']);
 
-
-
 rotate([1,2,3,4,2]);
-
-
-
-
-

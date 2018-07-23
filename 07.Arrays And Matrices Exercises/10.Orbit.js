@@ -1,6 +1,4 @@
 
-
-
 function solve(arr){
 
     let rows = arr[0];
@@ -44,20 +42,7 @@ function solve(arr){
             break;
     }
 
-    //print matrix
     matrix.forEach(n => console.log(n.join(" ")));
 }
 
 solve([5,5,2,2]);
-
-
-
-
-
-
-
-
-
-
-
-

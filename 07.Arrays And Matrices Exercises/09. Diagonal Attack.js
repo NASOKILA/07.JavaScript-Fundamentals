@@ -39,22 +39,10 @@ function solve(arr) {
     function isPartOfDiagonal(row, col, matrix) {
 
     }
-
 }
-/*
-solve(['5 3 12 3 1',
-    '11 4 23 2 5',
-    '101 12 3 21 10',
-    '1 4 5 2 2',
-    '5 22 33 11 1']);
-*/
-
-
-
 
 function diagonalAttack(arr) {
-
-    //fill tje matrix
+ 
     let matrix = [];
     for (let row = 0; row < arr.length; row++) {
         let currentRow = arr[row]
@@ -62,7 +50,6 @@ function diagonalAttack(arr) {
             .map(e => Number(e));
 
         matrix.push(currentRow);
-
     }
 
     let leftDiagonalSum = 0;
@@ -82,12 +69,10 @@ function diagonalAttack(arr) {
     let newMatrix = matrix;
 
     if (leftDiagonalSum !== rightDiagonalSum) {
-        //print the matrix
         matrix.forEach(e => console.log(e.join(" ")));
     }
     else
     {
-        //change the new matrix
         for (let row = 0; row < matrix.length; row++) {
             for (let col = 0; col < matrix[row].length; col++) {
 
@@ -95,7 +80,6 @@ function diagonalAttack(arr) {
                 else if(col === matrix[row].length - row - 1){}
                 else
                     newMatrix[row][col] = rightDiagonalSum;
-
             }
         }
 
@@ -103,13 +87,6 @@ function diagonalAttack(arr) {
     }
 }
 
-/*
-diagonalAttack(
-    ['1 1 1',
-    '1 1 1',
-    '1 1 0']
-);
-*/
 diagonalAttack(
     ['5 3 12 3 1',
     '11 4 23 2 5',
@@ -117,4 +94,3 @@ diagonalAttack(
     '1 4 5 2 2',
     '5 22 33 11 1']
 );
-

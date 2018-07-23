@@ -1,7 +1,6 @@
 
 function solve(args) {
 
-
     let arr = [];
     let counter = 1;
     for(let elem of args)
@@ -24,21 +23,10 @@ function solve(args) {
         arr.forEach(e => console.log(e));
 }
 
-//solve(['add','add','add','add',]);
-//solve(['add','add','remove','add','add',]);
-//solve(['remove','remove','remove']);
-
-
-
-
-
-
 function AddAndRemoveElements(commands) {
 
     let nums = [];
-
     for(let com = 0; com < commands.length; com++){
-
         if(commands[com] === 'add'){
             nums.push(com+1);
         }else if(commands[com] === 'remove'){
@@ -54,4 +42,3 @@ function AddAndRemoveElements(commands) {
 
   AddAndRemoveElements(['remove','remove','remove']);
   AddAndRemoveElements(['add','add','remove','add','add',]);
-
