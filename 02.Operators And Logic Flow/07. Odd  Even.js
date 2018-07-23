@@ -1,5 +1,4 @@
 
-
 function solve(n)
 {
     if(n < 0)
@@ -17,8 +16,3 @@ solve(5);
 solve(8);
 solve(1.5);
 solve(-3);
-
-
-
-
-

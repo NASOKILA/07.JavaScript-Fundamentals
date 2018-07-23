@@ -1,5 +1,4 @@
 
-
 function ChessBoard(n) {
 
     let div = `<div class="chessboard">\n`;
@@ -31,12 +30,3 @@ function ChessBoard(n) {
 }
 
 ChessBoard(3);
-
-
-
-
-
-
-
-
-

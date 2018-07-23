@@ -1,5 +1,4 @@
 
-
 function Area(a, b, c) {
 
     let p = (a + b + c) / 2;
@@ -8,8 +7,3 @@ function Area(a, b, c) {
 }
 
 Area(2, 3.5, 4);
-
-
-
-
-

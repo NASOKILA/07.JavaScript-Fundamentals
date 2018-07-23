@@ -14,9 +14,8 @@ function Generator(n) {
         ul += `<li><span style="color:${color}">${i}</span></li>\n`;
     }
     ul += '</ul>';
+	
     console.log(ul);
 }
 
 Generator(10);
-
-

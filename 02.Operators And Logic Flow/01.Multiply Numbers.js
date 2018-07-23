@@ -5,9 +5,5 @@ function Multiply(a, b) {
 }
 
 Multiply(23632.36, -12.3249);
+
 Multiply(3, 2);
-
-
-
-
-

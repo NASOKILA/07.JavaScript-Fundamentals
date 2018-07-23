@@ -1,5 +1,4 @@
 
-
 function solve(arg) {
 
     if(arg === "banana"
@@ -14,20 +13,8 @@ function solve(arg) {
         console.log("vegetable");
     else
         console.log("unknown");
-
 }
 
 solve("banana");
 solve("cucumber");
 solve("pizza");
-
-
-
-
-
-
-
-
-
-
-

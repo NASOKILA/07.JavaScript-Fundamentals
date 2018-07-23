@@ -10,13 +10,3 @@ function LeapYear(year) {
 LeapYear(1999);
 LeapYear(2000);
 LeapYear(1900);
-
-
-
-
-
-
-
-
-
-
