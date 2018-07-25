@@ -2,12 +2,12 @@
 function solve(portions, commands) {
 
     let mealsEaten = 0;
+
     for (let comm in commands) {
 
         let currentCommand = commands[comm]
             .split(" ")
             .filter(e => e != '');
-
 
         if (currentCommand[0] == "Serve") {
             console.log(portions.pop() + ' served!');
@@ -21,8 +21,9 @@ function solve(portions, commands) {
             mealsEaten++;
         }
         else if (currentCommand[0] == "Add") {
-            
+
             let portionToadd = currentCommand[1];
+
             if (portionToadd != undefined)
                 portions.unshift(portionToadd)
         }
@@ -44,6 +45,7 @@ function solve(portions, commands) {
                 portions.splice(startIndex, 1);
                 mealsEaten++;
             }
+
             console.log('Burp!');
         }
         else if (currentCommand[0] == "Shift") {
@@ -60,7 +62,6 @@ function solve(portions, commands) {
             if (firstPortionIndex >= secondPortionIndex)
                 continue;
 
-            //we save the elements in variables
             let firstElement = portions[firstPortionIndex];
             let secondElement = portions[secondPortionIndex];
 
@@ -69,7 +70,6 @@ function solve(portions, commands) {
 
             portions[secondPortionIndex] = firstElement;
             portions[firstPortionIndex] = secondElement;
-
         }
 
         else if (currentCommand[0] == "End") {
@@ -83,13 +83,5 @@ function solve(portions, commands) {
 
             break;
         }
-
     }
-
 }
-
-
-
-
-
-
