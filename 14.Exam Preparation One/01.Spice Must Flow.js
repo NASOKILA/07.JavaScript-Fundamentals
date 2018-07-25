@@ -1,7 +1,4 @@
 
-
-
-
 function solve(args)
 {
     let startingYeld = Number(args[0]);
@@ -14,8 +11,9 @@ function solve(args)
         extractedPiece += (startingYeld - workersConsumation);
         days++;
         startingYeld -= 10;
-        if(startingYeld < 100)
-        {
+
+        if(startingYeld < 100){
+
             console.log(days);
             console.log(extractedPiece - workersConsumation);
             break;

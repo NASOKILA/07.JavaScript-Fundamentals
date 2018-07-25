@@ -2,13 +2,12 @@
 function solve(args) {
 
     let text = args[0];
-
     text = text.replace(/[.!?,:;]\s*/g, (match) => match.trim() + " ");
-
 
     let pattTwo = /[ ]+[.,;:!?]/g;
     matches = text.match(pattTwo);
-    if(matches !== null) {
+
+    if (matches !== null) {
         for (let match of matches) {
 
             let newPiece = match[match.length - 1];
@@ -17,29 +16,42 @@ function solve(args) {
     }
 
     let pattThree = /[,.?!;:]+[ ]+[,.?!;:]/g;
+
     matches = text.match(pattThree);
-    if(matches !== null) {
+
+    if (matches !== null) {
+
         for (let match of moreMatches) {
+        
             let index = text.indexOf(match);
             let newPiece = '';
+        
             for (let p of match) {
+        
                 if (p !== ' ')
                     newPiece += p;
             }
+        
             text = text.replace(/[,.?!;:]+[ ]+[,.?!;:]/g, newPiece);
         }
     }
 
     let pattFour = /[.][ ]+\d+/g;
     matches = text.match(pattFour);
-    if(matches !== null) {
+    
+    if (matches !== null) {
+    
         for (let match of matches) {
+    
             let index = text.indexOf(match);
             let newPiece = '';
+    
             for (let p of match) {
+    
                 if (p !== ' ')
                     newPiece += p;
             }
+    
             text = text.replace(match, newPiece);
         }
     }
@@ -51,10 +63,5 @@ function solve(args) {
 }
 
 solve(['Terribly formatted text      .  With chaotic spacings." Terrible quoting   "! Also this date is pretty confusing : 20   .   12.  16 .']);
+
 solve(['Make,sure to give:proper spacing where is needed... !']);
-
-
-
-
-
-
