@@ -117,14 +117,4 @@ TAM IMA MNOGO BRAWSERSK IGRI
 *
 * Tova se pravi kato nakraq na funkciqta izviame
 * requestAnimationFrame(ImetoNaFunkciqtaVKoqtoSme);
-*
-*
-*
-* */
-
-
-
-
-
-
-
+*/
