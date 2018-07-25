@@ -1,8 +1,8 @@
 
-
-
 function solve(args) {
+
     let result = '<table>\n';
+
     for(let row of args)
     {
         let obj = JSON.parse(row);
@@ -10,11 +10,14 @@ function solve(args) {
         result += '    <tr>\n';
 
         result += `        <td>${obj['name']}</td>\n`;
+
         result += `        <td>${obj['position']}</td>\n`;
+
         result += `        <td>${obj['salary']}</td>\n`;
 
         result += '    <tr>\n';
     }
+
     result += `</table>`;
     console.log(result);
 }
@@ -28,6 +31,7 @@ solve(['{"name":"Pesho","position":"Promenliva","salary":100000}',
 function s(args){
 
     let result = '<table>\n';
+    
     for(let row of args){
 
         let obj = JSON.parse(row);

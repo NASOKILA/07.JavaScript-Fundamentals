@@ -1,7 +1,4 @@
 
-
-
-//“{systemName} | {componentName} | {subcomponentName}”
 function solve(args) {
 
     let systems = new Map();
@@ -13,37 +10,48 @@ function solve(args) {
         let [system, component, subcomponent] = elements;
 
         let components = new Map();
+
         let subcomponents = [];
 
-        //ako veche q ima taq sistema
         if (systems.has(system)) {
-            components = systems.get(system);
-            //ako veche go ima i komponenta
-            if (components.has(component)) {
-                subcomponents = components.get(component);
-                subcomponents.push(subcomponent);
-                components.set(component, subcomponents);
-                systems.set(system, components);
 
+            components = systems.get(system);
+
+            if (components.has(component)) {
+             
+                subcomponents = components.get(component);
+             
+                subcomponents.push(subcomponent);
+             
+                components.set(component, subcomponents);
+             
+                systems.set(system, components);
             }
             else {
-                //ako go nqma go setvame zedno sus vsichko drugo
+             
                 subcomponents.push(subcomponent);
+             
                 components.set(component, subcomponents);
+             
                 systems.set(system, components);
             }
-
         }
         else {
+            
             subcomponents.push(subcomponent);
+            
             components.set(component, subcomponents);
+            
             systems.set(system, components);
         }
     }
 
     let sorted = [...systems.keys()].sort(sortSystems);
+    
     for (let s of sorted) {
+    
         console.log(s);
+    
         let sys = systems.get(s);
 
         for (let comp of sys) {
@@ -53,22 +61,22 @@ function solve(args) {
                 console.log('||||||' + subcomp);
             }
         }
-
     }
 
     function sortSystems(s1, s2) {
+        
         if(systems.get(s1).size != systems.get(s2).size) {
+        
             return systems.get(s2).size - systems.get(s1).size;
-        } else {
+        } 
+        else {
+        
             return s1.toLowerCase().localeCompare(s2.toLowerCase());
         }
     }
 }
 
-
-
 function s(args){
-
 
 }
 
@@ -85,4 +93,3 @@ s(['SULS | Main Site | Home Page',
     'Lambda | CoreC | C4',
     'Indice | Session | Default Storage',
     'Indice | Session | Default Security']);
-
