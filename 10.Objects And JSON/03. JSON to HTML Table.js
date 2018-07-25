@@ -1,5 +1,4 @@
 
-
     function solve(str) {
 
         let obj = JSON.parse(str);
@@ -13,7 +12,6 @@
         }
         result += `</tr>\n`;
 
-        //slagame stoinostite
         for(let j = 1; j <= obj.length; j++)
         {
             result += `  <tr>`;
@@ -28,8 +26,8 @@
             result += `</tr>\n`;
         }
 
-
         result += `</table>`;
+
         console.log(result);
 
         function checkCharacters(name) {
@@ -37,7 +35,7 @@
             if(isNaN(name) === false)
                 return name;
 
-            if(name.indexOf('&') > -1) // ako indexa e > -1 znachi sushtestvuva
+            if(name.indexOf('&') > -1) 
                 name = name.replace(/[&]+?/g, '&amp;');
 
             if(name.indexOf('<') > -1)
@@ -59,22 +57,20 @@
 //solve('[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]');
 //solve('[{"Name":"Pesho <div>-a","Age":20,"City":"Sofia"},{"Name":"Gosho","Age":18,"City":"Plovdiv"},{"Name":"Angel","Age":18,"City":"Veliko Tarnovo"}]');
 
-
-
-
 function s(input) {
 
     let objects = JSON.parse(input);
 
     let table = '<table>\n';
+
     let keys = Object.keys(objects[0]);
 
     table += `  <tr>`;
     for (let key of keys) {
         table += `<th>${escapeSimbols(key)}</th>`;
     }
-    table += '</tr>\n';
 
+    table += '</tr>\n';
 
     for (let obj of objects)
     {
@@ -83,8 +79,10 @@ function s(input) {
 
             table += `<td>${escapeSimbols(obj[escapeSimbols(key.toString())].toString())}</td>`;
         }
+
         table += `</tr>\n`;
     }
+
     table += '</table>';
 
     function escapeSimbols(arr) {
@@ -99,13 +97,4 @@ function s(input) {
 }
 
 s('[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]');
-//s('[{"Name":"Pesho <div>-a","Age":20,"City":"Sofia"},{"Name":"Gosho","Age":18,"City":"Plovdiv"},{"Name":"Angel","Age":18,"City":"Veliko Tarnovo"}]');
-
-
-
-
-
-
-
-
-
+s('[{"Name":"Pesho <div>-a","Age":20,"City":"Sofia"},{"Name":"Gosho","Age":18,"City":"Plovdiv"},{"Name":"Angel","Age":18,"City":"Veliko Tarnovo"}]');

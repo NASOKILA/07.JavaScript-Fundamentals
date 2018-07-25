@@ -3,7 +3,7 @@ function solve(args) {
 
     let objArr = [];
 
-    args.shift(); // mahame purviq red
+    args.shift(); 
 
     for(let row of args)
     {
@@ -31,7 +31,6 @@ solve(['| Town | Latitude | Longitude |',
 
 */
 
-
 function  s(input){
 
     let [t,lat,long]= input[0].split('|')
@@ -58,10 +57,6 @@ function  s(input){
     console.log(JSON.stringify(towns));
 }
 
-
 s(['| Town | Latitude | Longitude |',
     '| Veliko Turnovo | 43.0757 | 25.6172 |',
     '| Monatevideo | 34.50 | 56.11 |']);
-
-
-

@@ -1,11 +1,12 @@
 
-
 function solve(args) {
 
     let str = '';
+
     args.forEach(e => str += e);
 
     let obj = {};
+
     for(let word of str.split(/\W/g).filter(e => e !== ''))
     {
         let counter = 1;
@@ -15,14 +16,15 @@ function solve(args) {
             counter = obj[word];
             counter++;
         }
+
         obj[word] = counter;
     }
+
     console.log(JSON.stringify(obj));
 }
 
 //solve(['Far too slow, you\'re far too slow.']);
 //solve('JS devs use Node.js for server-side JS.-- JS for devs');
-
 
 function s(input) {
 
@@ -31,6 +33,7 @@ function s(input) {
         .filter(e => e != '');
 
     let obj = {};
+
     for (let word of words) {
 
         if(obj[word] != undefined)
@@ -38,10 +41,9 @@ function s(input) {
         else
             obj[word] = 1;
     }
+
     console.log(JSON.stringify(obj));
 }
 
 s(['Far too slow, you\'re far too slow.']);
 s(['JS devs use Node.js for server-side JS.-- JS for devs']);
-
-

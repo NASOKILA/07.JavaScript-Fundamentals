@@ -8,6 +8,7 @@ function solve(args) {
         let input = row.split(' <-> ');
 
         let city = input[0];
+
         let population = Number(input[1]);
 
         if(map.has(city))
@@ -19,7 +20,6 @@ function solve(args) {
     for(let tp of map)
         console.log(`${tp[0]} : ${tp[1]}`);
 }
-
 
 /*
 solve(['Sofia <-> 1200000',
@@ -35,7 +35,6 @@ solve(['Sofia <-> 1200000',
  'Istanbul <-> 1000']);
 
 */
-
 
 function s(input) {
 
@@ -65,7 +64,3 @@ s(['Istanbul <-> 100000',
     'Jerusalem <-> 2352344',
     'Mexico City <-> 23401925',
     'Istanbul <-> 1000']);
-
-
-
-

@@ -25,6 +25,7 @@
         let objects = JSON.parse(input);
 
         let table = '<table>\n';
+        
         let keys = Object.keys(objects[0]);
 
         table += `  <tr>`;
@@ -33,7 +34,6 @@
         }
         table += '</tr>\n';
 
-
         for (let obj of objects)
         {
             table += `  <tr>`;
@@ -41,10 +41,12 @@
 
                 table += `<td>${escapeSimbols(obj[escapeSimbols(key.toString())].toString())}</td>`;
             }
+        
             table += `</tr>\n`;
         }
-        table += '</table>';
 
+        table += '</table>';
+        
         function escapeSimbols(arr) {
             return arr.replace(/&/g, '&amp;')
                 .replace(/</g, '&lt;')
@@ -55,6 +57,7 @@
 
         return table;
     }
+    
     window.onload = function(){
         let container = document.getElementById('wrapper');
         container.innerHTML = fromJSONToHTMLTable(['[{"Name":"Tomatoes & Chips","Price":2.35},{"Name":"J&B Chocolate","Price":0.96}]']);

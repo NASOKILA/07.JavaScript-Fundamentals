@@ -6,6 +6,7 @@ function solve(args) {
     for(let i = 0; i <= args.length-1; i = i + 2)
     {
         let key = args[i];
+
         let value = Number(args[i+1]);
 
         if(result.hasOwnProperty(key))
@@ -19,9 +20,6 @@ function solve(args) {
 
 //solve(['Sofia', '20', 'Varna', '3', 'Sofia', '5', 'Varna', '4']);
 //solve(['Sofia', '20', 'Varna', '3', 'sofia', '5', 'varna', '4']);
-
-
-
 
 function s(input) {
 
@@ -42,5 +40,3 @@ function s(input) {
 
 s(['Sofia', '20', 'Varna', '3', 'Sofia', '5', 'Varna', '4']);
 s(['Sofia', '20', 'Varna', '3', 'sofia', '5', 'varna', '4']);
-
-

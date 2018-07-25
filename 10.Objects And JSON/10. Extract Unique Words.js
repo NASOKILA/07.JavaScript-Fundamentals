@@ -1,8 +1,6 @@
 
-
 function solve(args) {
 
-    //Pravim set za da izbenem ednakvite stoinosti
     let words = new Set();
 
     for(let row of args)
@@ -13,6 +11,7 @@ function solve(args) {
 
     console.log([...words].join(', '));
 }
+
 /*
 solve(['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis hendrerit dui.',
     'Quisque fringilla est urna, vitae efficitur urna vestibulum fringilla.',
@@ -22,8 +21,6 @@ solve(['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque qu
     'Integer ac turpis commodo, varius nulla sed, elementum lectus.',
     'Vivamus turpis dui, malesuada ac turpis dapibus, congue egestas metus.']);
 */
-
-
 
 function s(input) {
 
@@ -37,7 +34,6 @@ function s(input) {
 
         for (let word of words)
             uniqueWords.add(word.toLowerCase());
-
     }
 
     console.log([...uniqueWords.values()].join(', '));
@@ -50,10 +46,3 @@ s(['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis h
     'Morbi in ipsum varius, pharetra diam vel, mattis arcu.',
     'Integer ac turpis commodo, varius nulla sed, elementum lectus.',
     'Vivamus turpis dui, malesuada ac turpis dapibus, congue egestas metus.']);
-
-
-
-
-
-
-

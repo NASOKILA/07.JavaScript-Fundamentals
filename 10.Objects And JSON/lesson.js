@@ -227,4 +227,3 @@ console.log([...names.entries()]);
 * Te izpolzvat specialni Funkcii.
 *
 * */
-
